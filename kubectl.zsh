@@ -50,6 +50,7 @@ function _zsh_kubectl_prompt_precmd() {
         ZSH_KUBECTL_PROMPT="current-context is not set"
         return 1
     fi
+    context=$(echo $context | perl -p -e 's/gke_[^_]+_[^_]+_//')
 
     zstyle -s ':zsh-kubectl-prompt:' namespace namespace
     if [[ "$namespace" != true ]]; then

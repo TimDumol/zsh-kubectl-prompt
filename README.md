@@ -2,6 +2,8 @@
 
 This script displays information about the kubectl current context and namespace in zsh prompt.
 
+This differs from superbrothers/zsh-kubectl-prompt in that it eliminates the long prefix that GKE puts in the kubectl config name (`gke_PROJECT_ZONE_`).
+
 ![Screenshot](./images/screenshot001.png)
 
 ## Usage
