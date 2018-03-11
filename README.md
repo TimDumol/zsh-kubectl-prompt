@@ -18,7 +18,7 @@ RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 
 Also you can install with homebrew.
 ```console
-$ brew tap superbrothers/zsh-kubectl-prompt git://github.com/superbrothers/zsh-kubectl-prompt.git
+$ brew tap TimDumol/zsh-kubectl-prompt git://github.com/TimDumol/zsh-kubectl-prompt.git
 $ brew install zsh-kubectl-prompt
 ```
 
@@ -43,7 +43,7 @@ source "${HOME}/.zgen/zgen.zsh"
 # if the init script doesn't exist
 if ! zgen saved; then
     # specify plugins here
-    zgen load superbrothers/zsh-kubectl-prompt
+    zgen load TimDumol/zsh-kubectl-prompt
 
     # generate the init script from plugins above
     zgen save
